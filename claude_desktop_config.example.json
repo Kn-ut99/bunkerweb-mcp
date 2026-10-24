@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "bunkerweb": {
+      "command": "uv",
+      "args": ["run", "/home/VOUS/.local/share/bunkerweb-mcp/bunkerweb_mcp.py"],
+      "env": {
+        "BUNKERWEB_API_URL": "http://127.0.0.1:8888",
+        "BUNKERWEB_API_USERNAME": "mcp",
+        "BUNKERWEB_API_PASSWORD_FILE": "/home/VOUS/.config/bunkerweb-mcp.pass",
+        "BUNKERWEB_ACCESS_LEVEL": "read"
+      }
+    },
+    "bunkerweb-admin": {
+      "command": "uv",
+      "args": ["run", "/home/VOUS/.local/share/bunkerweb-mcp/bunkerweb_mcp.py"],
+      "env": {
+        "BUNKERWEB_API_URL": "http://127.0.0.1:8888",
+        "BUNKERWEB_API_USERNAME": "admin",
+        "BUNKERWEB_API_PASSWORD_FILE": "/home/VOUS/.config/bunkerweb-admin.pass",
+        "BUNKERWEB_ACCESS_LEVEL": "admin"
+      }
+    }
+  }
+}

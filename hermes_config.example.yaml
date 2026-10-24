@@ -1,0 +1,10 @@
+# À fusionner dans ~/.hermes/config.yaml (garder vos autres mcp_servers)
+mcp_servers:
+  bunkerweb:
+    command: "uv"
+    args: ["run", "/home/VOUS/.local/share/bunkerweb-mcp/bunkerweb_mcp.py"]
+    env:
+      BUNKERWEB_API_URL: "http://127.0.0.1:8888"
+      BUNKERWEB_API_USERNAME: "mcp"
+      BUNKERWEB_API_PASSWORD_FILE: "/home/VOUS/.config/bunkerweb-mcp.pass"
+      BUNKERWEB_ACCESS_LEVEL: "read"   # read | operate | admin
