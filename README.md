@@ -162,3 +162,7 @@ Astuce : déclarez deux entrées (`bunkerweb` en `read`, `bunkerweb-admin` en `a
 - **HTTP 429** : rate limit de l'API (`/auth` est limité à 10 requêtes/min par défaut) ; le serveur réutilise son jeton, donc ça ne devrait arriver qu'en rafale.
 - **HTTP 404 sur une route** : la route n'existe pas dans votre version ; `bw_api_get` avec `path="/openapi.json"` liste celles qui existent.
 - Les logs du serveur MCP sortent sur stderr (visibles dans les logs MCP de Claude Desktop ou de Hermes).
+
+## Licence
+
+MIT, voir [LICENSE](LICENSE).
